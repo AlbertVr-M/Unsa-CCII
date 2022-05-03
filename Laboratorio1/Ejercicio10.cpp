@@ -12,6 +12,6 @@ int main(){
     }
     while(contrasena !=clave);
     cout<<"Clave correcta!!!";
-
+    //Albert Vargas Mamani
     return 0;
 }

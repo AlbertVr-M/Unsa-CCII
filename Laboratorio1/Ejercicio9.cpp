@@ -18,5 +18,6 @@ int main(){
     cout<<" ]";
     
     cout<<"\nLa suma de los negativos es: "<<suma;
+    //Albert Vargas Mamani
     return 0;
 }

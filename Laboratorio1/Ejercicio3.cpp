@@ -9,4 +9,5 @@ int main(){
     //cin>>tiempo_adicional;
     cout<<"La hora es: "<<hora[0]<<hora[1]<<minutos[3]<<minutos[4];
     return 0;
+    //Albert Vargas Mamani
 }

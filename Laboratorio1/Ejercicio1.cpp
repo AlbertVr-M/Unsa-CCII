@@ -9,6 +9,7 @@ int main(){
     cout<<"Ingrese el segundo numero: "; cin>>n2;
 
     cout<<"El producto de ambos numeros es: "<<n1*n2;
+    //Albert Vargas Mamani
 
 
     return 0;

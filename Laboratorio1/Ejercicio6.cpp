@@ -3,18 +3,18 @@ using namespace std;
 
 int main(){
     int numero=0;
-    short binario[8];
+    short numero_binario[8];
     cout<<"Ingrese un numero: "<<endl; 
     cin>>numero;
     if(numero >100){
         for(int i=0; i<8;i++){
-            binario[i]=numero%2;
+            numero_binario[i]=numero%2;
             numero /= 2;
 
         }
         cout<<"El numero en binario es: "<<endl;
         for(int i=7; i>=0; i--){
-            cout<<binario[i];
+            cout<<numero_binario[i];
         }
 
     }
@@ -22,6 +22,6 @@ int main(){
         cout<<"Vuelva a correr el programa: ";
         
     }
-    
+    //Albert Vargas Mamani
     return 0;
 }

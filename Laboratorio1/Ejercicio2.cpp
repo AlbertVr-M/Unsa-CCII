@@ -13,5 +13,6 @@ int main (){
     cin>>apellido_materno;
 
     cout<<nombre[0]<<apellido_paterno<<apellido_materno[0]<<"@unsa.edu.pe";
+    //Albert Vargas Mamani
    
 }

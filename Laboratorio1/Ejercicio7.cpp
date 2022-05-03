@@ -18,6 +18,6 @@ int main(){
     else{
         cout<<"Ningun de los dos numeros es divisor entre si";
     }
-
+    //Albert Vargas Mamani
     return 0;
 }
