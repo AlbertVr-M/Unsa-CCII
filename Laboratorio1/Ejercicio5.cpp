@@ -11,5 +11,5 @@ int main(){
     cout<<numero_entero;
 
     return 0;
-
+ //Albert Vargas Mamani
 }
