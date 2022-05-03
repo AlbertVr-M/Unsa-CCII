@@ -10,12 +10,9 @@ int primo(int n){
             }
         }
         if(es_primo==2){
-            cout<<i<<"es un numero numero primo "<<endl;
+            cout<<i<<" es un numero numero primo "<<endl;
         }
         es_primo=0;
-
-        
-
     }
 
 }
@@ -26,4 +23,5 @@ int main(){
     primo(numero1);
 
     return 0;
+  //Albert Vargas Mamani
 }

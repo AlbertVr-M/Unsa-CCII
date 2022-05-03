@@ -32,5 +32,6 @@ int main(){
     es_par(n1);
     suma_impares(n1);
     return 0;
+      //Albert Vargas Mamani
     
 }

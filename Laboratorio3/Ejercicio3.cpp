@@ -16,4 +16,6 @@ int main(){
     cin>>anio>>mes>>dia;
     edad(anio,mes,dia,anio_naci,mes_naci,dia_naci);
     return 0;
+
+  //Albert Vargas Mamani
 }
