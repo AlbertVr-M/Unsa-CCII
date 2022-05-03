@@ -6,7 +6,7 @@ int main(){
     cout<<"Cuantos terminos de la serie fibonacci desea?: "<<endl;
     cin>>terminos;
     for(int i=0;i<terminos;i++){
-        cout<<actual<<endl;
+        cout<<actual<<" ";
         temporal=actual;
         actual=siguiente;
         siguiente=siguiente+temporal;
@@ -15,4 +15,5 @@ int main(){
 
 
     return 0;
+     //Albert Vargas Mamani
 }
