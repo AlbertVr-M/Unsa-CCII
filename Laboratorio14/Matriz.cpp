@@ -2,7 +2,6 @@
 #include <string>
 using namespace std;
 
-
 struct Tienda{
 	string codigo;
 	int precio=0;
@@ -11,17 +10,12 @@ struct Tienda{
 	void ingresar(Tienda**&, int, int);
 	void cancelar(Tienda**&, int, int, string);
     void mostrar(Tienda**& matriz, int, int);
-
-    
 };
-
 void ingresar(Tienda**& matriz, int f, int c){
 	string aux;
 	int aux2=0, num=0;
-	for (int i = 0; i < f; i++) 
-	{
-		for (int j = 0; j < c; j++, num++)
-		{
+	for (int i = 0; i < f; i++){
+		for (int j = 0; j < c; j++, num++){
 			cout << "Ingrese el codigo del producto "<< num +1 << ": "; 
 			cin >> aux;
 			matriz[i][j].codigo = aux;
@@ -40,10 +34,8 @@ void ingresar(Tienda**& matriz, int f, int c){
 	}
 }
 void cancelar(Tienda**& matriz, int f, int c, string codigo){
-	for (int i = 0; i < f; i++)
-	{
-		for (int j = 0; j < c; j++)
-		{
+	for (int i = 0; i < f; i++){
+		for (int j = 0; j < c; j++){
 			if (matriz[i][j].codigo == codigo)
 			{
 				matriz[i][j].cantidad = 0;
@@ -63,14 +55,11 @@ bool buscar(Tienda**& matriz, int f, int c,  string& codigo){
 	return false;
 	
 }
-
 void mostrar(Tienda**& matriz, int f, int c){
 	int num=0;
     int aux3=0;
-	for (int i = 0; i < f; i++)
-	{
-		for (int j = 0; j < c; j++, num++)
-		{
+	for (int i = 0; i < f; i++){
+		for (int j = 0; j < c; j++, num++){
             aux3=num;
 			cout << "Producto" << aux3+1 <<endl;
 			cout<< "Codigo: " << matriz[i][j].codigo << endl;
@@ -106,43 +95,29 @@ int main(){
 		cin >> opcion;
 		switch (opcion){
             case 1:
-            {
                 ingresar(M,fil,colum);
                 break;
-            }
+            
             case 2:
-            {
                 cout << "Ingrese el codigo del producto a buscar: "<<endl; 
                 cin >> aux;
-
                 buscar(M, fil, colum, aux);
-            }
             case 3:
-            {
                 mostrar(M, fil, colum);
-                break;
-            }
+                break;      
             case 4:
-            {
                 cout << "Ingrese el codigo del producto vendido: ";
 				cin >> aux;
-
 			    if (!buscar(M, fil, colum, aux))
 				    cout << "No se encontro producto con el codigo digitado \n";
 			    else
 				    cancelar(M, fil, colum, aux);
 			    break;
-            }
             case 5:
-            {
                 cout << "Fin del Programa "; 
                 break;
-            }
 		}
-        
-		
 	}while (opcion != 5);
-
 
 	for (int i = 0; i < fil; i++)
 		delete[] M[i];
