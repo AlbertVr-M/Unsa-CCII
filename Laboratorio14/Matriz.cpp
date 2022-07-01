@@ -108,8 +108,9 @@ int main(){
             case 4:
                 cout << "Ingrese el codigo del producto vendido: ";
 				cin >> aux;
-			    if (!buscar(M, fil, colum, aux))
+			    if (!buscar(M, fil, colum, aux)){
 				    cout << "No se encontro producto con el codigo digitado \n";
+				}
 			    else
 				    cancelar(M, fil, colum, aux);
 			    break;
